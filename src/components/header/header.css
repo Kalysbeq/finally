@@ -1,0 +1,20 @@
+.header{
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.wrapper{
+  display: flex;
+  flex-grow: 1;
+}
+.header__store-title{
+  color: wheat;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.header__cart-btn-wrapper{
+  justify-content: flex-end;
+}
