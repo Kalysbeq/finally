@@ -21,13 +21,18 @@ export const ItemsBuy = ({ game }) => {
   }
   return (
     <div className='game-buy'>
-      <span className='game-price'>{game.price} Coм</span>
-      <Button
-        type={isItemInCart ? "secondary" : "primary"}
-        onClick={handleClick}
-      >
-        {isItemInCart ? 'Убрать из корзины' : 'в Корзину'}
-      </Button>
+      <div className='game-boy__block'>
+        <span className='game-price'>{game.price} Coм</span>
+        <Button
+
+          type={isItemInCart ? "secondary" : "primary"}
+          onClick={handleClick}
+        >
+          {isItemInCart ? 'Убрать из корзины' : 'в Корзину'}
+        </Button>
+
+
+      </div>
 
     </div>
   )

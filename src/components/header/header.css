@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 .header{
   height: 90px;
   display: flex;
@@ -8,6 +9,12 @@
 .wrapper{
   display: flex;
   flex-grow: 1;
+}
+.header-title{
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 2rem;
+  
+  color: rgb(208, 189, 220);
 }
 .header__store-title{
   color: wheat;

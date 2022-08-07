@@ -26,10 +26,14 @@
 .game-item__ganre{
   margin-top: 10px;
   display: flex;
+  gap: 10px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .game-item__details{
   padding: 10px 20px;
+  margin: 0 auto;
+  text-align: center;
 }
 .game-item__description{
   margin-top: 10px;
@@ -45,6 +49,7 @@
     padding: 2px 5px;
     font-size: 13px;
     border-radius: 10px;
+
 }
 .gengre:not(:last-child) {
     margin-right: 7px;

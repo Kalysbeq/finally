@@ -7,7 +7,7 @@ export const Header=() => {
   return (
    <div className='header'>
     <div className='wrapper'>
-        <a>
+        <a href='/' className='header-title'>
           OYNOP-JYRGA
         </a>
   

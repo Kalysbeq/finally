@@ -1,3 +1,12 @@
 .game-price {
-    margin-right: 5px;
+    text-align: center;
+    margin-right: 10px;
+}
+.game-boy__block{
+    
+    align-items: center;
+margin-right:  60px;
+margin-bottom: 20px;
+    display: flex;
+   
 }
