@@ -1,0 +1,13 @@
+.cart-item{
+  padding: 20px;
+  width: 100%;
+   display: flex;
+   gap: 20px;
+align-items: center;
+flex-direction: column;
+}
+.cart-item__price{
+  display: flex;
+  align-items: center;
+}
+
