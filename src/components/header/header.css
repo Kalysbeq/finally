@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+ 
 }
 .wrapper{
   display: flex;
@@ -24,4 +25,7 @@
 }
 .header__cart-btn-wrapper{
   justify-content: flex-end;
+}
+.register-header{
+  margin-right: 10px;
 }

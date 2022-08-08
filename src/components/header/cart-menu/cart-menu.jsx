@@ -4,6 +4,10 @@ import { CartItem } from '../cartItem/cart-item'
 import { calcTotalPrice } from '../util'
 import './cart-menu.css'
 export const CartMenu = ({ items, onClick }) => {
+  const e = () => {
+
+    alert('registration')
+  }
   return (
     <div className='cart-menu'>
       <div className="cart-menu__game-list">
@@ -23,9 +27,9 @@ export const CartMenu = ({ items, onClick }) => {
               <span>{calcTotalPrice(items)}сом</span>
             </div>
 
-            <button onClick={(e) => {
-              e.alert('zalupa')
-            }}>zalupa</button>
+            <button onClick={e}>
+              zalupa
+            </button>
           </div>
           : null
       }

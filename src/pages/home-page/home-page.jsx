@@ -1,4 +1,6 @@
 import React from 'react'
+import { useState } from 'react'
+import { BsSearch } from 'react-icons/bs'
 import { GameItem } from '../../components/header/game-item/game-item'
 import './home-page.css'
 
@@ -57,18 +59,27 @@ const GAMES = [
         id: 6,
         description: 'Assassin’s Creed Valhalla — мультиплатформенная компьютерная игра в жанре action/RPG, разработанная студией Ubisoft Montreal под издательством компании Ubisoft. Является двенадцатой игрой в серии игр Assassin’s Creed.'
     },
-    
 ]
 
-    export const HomePage = () => {
+export const HomePage = () => {
+    const [value, setValue] = useState('')
+    const fliterGame = GAMES.filter(game => {
+        return game.title.toLowerCase().includes(value.toLocaleLowerCase())
+    })
     return (
         <div className="home-page">
-        {GAMES.map(game =>{
-            
-           return( 
-            <GameItem key={game.id} game={game}/>
-           )
-        })}
+            <form className='search-form'>
+                <input className='search' type='search'
+                    placeholder='Напишите название игры....'
+                    onChange={(event) => setValue(event.target.value)}
+                />
+                <BsSearch className='search-icon' />
+            </form>
+            {fliterGame.map(game => {
+                return (
+                    <GameItem key={game.id} game={game} />
+                )
+            })}
         </div>
     )
 }

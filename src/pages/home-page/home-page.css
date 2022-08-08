@@ -1,5 +1,32 @@
 .home-page{
   display: flex;
  flex-wrap: wrap;
+ 
  margin: 0 auto;
 }
+.search-form{
+  width: 200px;
+  width: 200px;
+  display: flex;
+  position: absolute;
+  right: 0;
+  margin-left: auto;
+ margin-right: auto;
+  left: 0;
+ 
+  color: rgb(23, 21, 21);
+  height: 30px;
+  align-items: center;
+  gap: 10px;
+}
+.search-icon{
+  cursor: pointer;
+}
+
+.search{
+  color: rgb(37, 31, 31);
+  font-weight: 100;
+   border-radius: 20px;
+  height: 30px;
+}
+
