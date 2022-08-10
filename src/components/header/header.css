@@ -5,11 +5,14 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
- 
 }
 .wrapper{
   display: flex;
   flex-grow: 1;
+  align-items: center;
+}
+.register-header{
+  margin-right: 30px;
 }
 .header-title{
   font-family: 'Fjalla One', sans-serif;
@@ -25,7 +28,17 @@
 }
 .header__cart-btn-wrapper{
   justify-content: flex-end;
+  
+  
 }
-.register-header{
-  margin-right: 10px;
+.link-header{
+  width: 200px;
+   font-family: 'Fjalla One', sans-serif;
+    font-family: 'Fjalla One', sans-serif;
+}
+.activation-header{
+  margin-left: 10px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 18px;
+   
 }

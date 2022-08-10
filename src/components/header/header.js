@@ -11,12 +11,16 @@ export const Header=() => {
         <Link to='/' className='header-title'>
           OYNOP-JYRGA
         </Link>
-  
+     <Link className='activation-header' to='./activation'> Активиация игры</Link>
     </div>
-  
+ 
 
     <div className='wrapper header__cart-btn-wrapper'>
-      <Link className='register-header' to='/registraton'>Sign up</Link>
+      <div className='link-header'>
+        
+        
+      </div>
+      <Link className='register-header' to='/registraton'>Регистрация</Link>
      <Cartblock/>
     </div>
    </div>
