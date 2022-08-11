@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+.game-page__content {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.game-page__left {
+    width: 70%;
+}
+
+.game-page__right {
+    width: 30%;
+}
+
+.game-page__buy-game {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.header-game__page{
+  display: flex;
+
+}
+.header-game__page{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.game-description{
+   font-family: 'Fjalla One', sans-serif;
+   font-size: 18px;
+}
+.game-page__link{
+    font-family: 'Fjalla One', sans-serif;
+  font-size: 2rem;
+  
+  color: rgb(208, 189, 220);
+}

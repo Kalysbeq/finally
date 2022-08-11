@@ -1,28 +1,25 @@
 import React from 'react'
-import { Link,Route,Routes } from 'react-router-dom'
+import { Link, Route, Routes } from 'react-router-dom'
 import { Cartblock } from './cartblock/cart-block'
 import { Registration } from '../../pages/registraton/Registration'
 
-import "./header.css"
-export const Header=() => {
+import './header.css'
+export const Header = () => {
   return (
-   <div className='header'>
-    <div className='wrapper'>
-        <Link to='/' className='header-title'>
+    <div className="header">
+      <div className="wrapper">
+        <Link to="/" className="header-title">
           OYNOP-JYRGA
         </Link>
-     <Link className='activation-header' to='./activation'> Активиация игры</Link>
-    </div>
- 
-
-    <div className='wrapper header__cart-btn-wrapper'>
-      <div className='link-header'>
-        
-        
       </div>
-      <Link className='register-header' to='/registraton'>Регистрация</Link>
-     <Cartblock/>
+
+      <div className="wrapper header__cart-btn-wrapper">
+        <div className="link-header"></div>
+        <Link className="register-header" to="/registraton">
+          Регистрация
+        </Link>
+        <Cartblock />
+      </div>
     </div>
-   </div>
   )
 }

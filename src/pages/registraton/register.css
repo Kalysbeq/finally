@@ -37,3 +37,9 @@ box-shadow: -4px 0px 8px 5px rgba(0,0,0,0.53);
   color: black;
   margin: 0 auto;
 }
+.registr-header{
+    font-family: 'Fjalla One', sans-serif;
+  font-size: 2rem;
+  
+  color: rgb(208, 189, 220);
+}

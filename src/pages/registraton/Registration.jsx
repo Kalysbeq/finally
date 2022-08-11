@@ -11,6 +11,8 @@ export const Registration = () => {
 
     username: '',
 
+    email: '',
+
     password: '',
 
     location: '',
@@ -37,6 +39,7 @@ export const Registration = () => {
         <h1>Регистрация</h1>
         <div className="input-register">
           <input
+            placeholder="FirstName"
             value={value.first_name}
             type="text"
             onChange={(e) => {
@@ -44,6 +47,7 @@ export const Registration = () => {
             }}
           />
           <input
+            placeholder="LastName"
             value={value.last_name}
             type="text"
             onChange={(e) => {
@@ -51,6 +55,7 @@ export const Registration = () => {
             }}
           />
           <input
+            placeholder="UserName"
             value={value.username}
             type="text"
             onChange={(e) => {
@@ -58,20 +63,31 @@ export const Registration = () => {
             }}
           />
           <input
-            value={value.password}
+            placeholder="Email@...."
+            value={value.email}
             type="text"
+            onChange={(e) => {
+              setValue({ ...value, email: e.target.value })
+            }}
+          />
+          <input
+            placeholder="Password..."
+            value={value.password}
+            type="password"
             onChange={(e) => {
               setValue({ ...value, password: e.target.value })
             }}
           />
           <input
+            placeholder="location"
             value={value.location}
-            type="password"
+            type="text"
             onChange={(e) => {
               setValue({ ...value, location: e.target.value })
             }}
           />
           <input
+            placeholder="Tel number"
             value={value.phone}
             type="number"
             onChange={(e) => {
@@ -82,7 +98,6 @@ export const Registration = () => {
             Зарегистрироваться
           </button>
         </div>
-        F
       </form>
     </div>
   )
