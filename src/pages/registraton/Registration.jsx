@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import axios from 'axios'
 import { Link } from 'react-router-dom'
 import './register.css'
 
@@ -19,13 +20,13 @@ export const Registration = () => {
 
     phone: '',
   })
-
-  const zalupa = (e) => {
+  const BASE_URL = 'http://demone.pythonanywhere.com/api/v1/registration'
+  const post = (e) => {
     e.preventDefault()
     const newItem = value
     console.log(newItem)
 
-    // axios.post(BASE_URL, newItem).then((res) => console.log(res))
+    axios.post(BASE_URL, newItem).then((res) => console.log(res))
   }
 
   return (
@@ -94,7 +95,7 @@ export const Registration = () => {
               setValue({ ...value, phone: e.target.value })
             }}
           />
-          <button type="submit" onClick={zalupa}>
+          <button type="submit" onClick={post}>
             Зарегистрироваться
           </button>
         </div>

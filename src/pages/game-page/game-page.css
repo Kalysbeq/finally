@@ -37,3 +37,9 @@
   
   color: rgb(208, 189, 220);
 }
+.game-page__right{
+  border: 1px solid wheat;
+  border-radius: 10px;
+ padding: 10px ;
+  text-align: center;
+}

@@ -8,11 +8,13 @@ import './game-page.css'
 export const GamePage = () => {
   const game = useSelector((state) => state.games.currentGame)
   if (!game) return null
+
+
   return (
     <div className="game-page">
       <header className="header-game__page">
         <Link className='game-page__link' to="/">OYNOP-JYRGA</Link>
-        <h1 className="game-page__title">{game.title}</h1>
+        <h1 className="game-page__title">{game.name}</h1>
         <Cartblock />
       </header>
 
@@ -21,7 +23,7 @@ export const GamePage = () => {
           <iframe
             width="90%"
             height="400px"
-            src={game.video}
+            src={game.video_url}
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
